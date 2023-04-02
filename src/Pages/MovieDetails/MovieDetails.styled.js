@@ -15,6 +15,7 @@ export const LinkBack = styled(Link)`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  text-decoration: none;
   background-color: #4caf50;
   margin-bottom: 12px;
   padding: 10px;

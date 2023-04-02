@@ -33,7 +33,7 @@ const MovieDetails = () => {
     <main>
       <LinkBack to="/">
         <HiOutlineArrowLeft size={16} />
-        <span>Go back</span>
+        Go back
       </LinkBack>
       <MovieCard>
         <Info>
