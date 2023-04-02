@@ -5,8 +5,9 @@ import { searchMovies } from 'components/Services/Services';
 import { useEffect } from 'react';
 import { Li } from 'Pages/Home/Home.styked';
 import { Loader } from 'components/Loader/Loader';
+import PropTypes from 'prop-types';
 
-export const Movies = () => {
+const Movies = () => {
   const [searchParams, setSearchParams] = useSearchParams();
   const movieName = searchParams.get('movieName') ?? '';
   const [movieList, setMoviesList] = useState([]);
@@ -63,3 +64,8 @@ export const Movies = () => {
     </main>
   );
 };
+Movies.propTypes = {
+  onSubmit: PropTypes.func.isRequired,
+};
+
+export default Movies;

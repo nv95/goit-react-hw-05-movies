@@ -4,7 +4,7 @@ import { CastItem, CastList, Character, Name } from './Cast.styled';
 import { useEffect } from 'react';
 import { qetMovieCredits } from 'components/Services/Services';
 
-export const Cast = () => {
+const Cast = () => {
   const [castList, setCastList] = useState([]);
   const { movieId } = useParams();
 
@@ -35,3 +35,5 @@ export const Cast = () => {
     </CastList>
   );
 };
+
+export default Cast;

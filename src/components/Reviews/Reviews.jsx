@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 import { useState } from 'react';
 import { useParams } from 'react-router-dom';
 
-export const Reviews = () => {
+const Reviews = () => {
   const [reviewInfo, setReviewInfo] = useState([]);
   const { movieId } = useParams();
 
@@ -23,3 +23,5 @@ export const Reviews = () => {
     </ul>
   );
 };
+
+export default Reviews;

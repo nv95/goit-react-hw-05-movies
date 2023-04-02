@@ -14,7 +14,7 @@ import { useEffect, useState } from 'react';
 import { qetMovieDetails } from 'components/Services/Services';
 import { HiOutlineArrowLeft } from 'react-icons/hi';
 
-export const MovieDetails = () => {
+const MovieDetails = () => {
   const [movieDetail, setMovieDetail] = useState({});
   const { movieId } = useParams();
 
@@ -75,3 +75,5 @@ export const MovieDetails = () => {
     </main>
   );
 };
+
+export default MovieDetails;

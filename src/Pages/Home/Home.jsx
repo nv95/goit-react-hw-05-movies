@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { H1, Li, Main } from './Home.styked';
 
-export const Home = () => {
+const Home = () => {
   const [trendMovies, setTrendMovies] = useState([]);
   const [isLoaidng, setIsLoading] = useState(false);
 
@@ -32,3 +32,4 @@ export const Home = () => {
     </Main>
   );
 };
+export default Home;
