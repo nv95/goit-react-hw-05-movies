@@ -27,5 +27,6 @@ export const Character = styled.p`
 `;
 export const Img = styled.img`
   width: 100%;
+  height: 350px;
   border-radius: 4px;
 `;
