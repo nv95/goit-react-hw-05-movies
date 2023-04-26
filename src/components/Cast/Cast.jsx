@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useParams } from 'react-router-dom';
-import { CastItem, CastList, Character, Name } from './Cast.styled';
+import { CastItem, CastList, Character, Img, Name } from './Cast.styled';
 import { useEffect } from 'react';
 import { qetMovieCredits } from 'components/Services/Services';
 
@@ -16,7 +16,7 @@ const Cast = () => {
       {castList.length > 0
         ? castList.map(({ id, name, profile_path, character }) => (
             <CastItem key={id}>
-              <img
+              <Img
                 src={
                   profile_path
                     ? `https://image.tmdb.org/t/p/w200${profile_path}`
